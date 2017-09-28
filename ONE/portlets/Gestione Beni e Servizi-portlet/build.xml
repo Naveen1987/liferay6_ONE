@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="Gestione Beni e Servizi-portlet" basedir="." default="deploy">
+	<import file="../build-common-portlet.xml" />
+</project>

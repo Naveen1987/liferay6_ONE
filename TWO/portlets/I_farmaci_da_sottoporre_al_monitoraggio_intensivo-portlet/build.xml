@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="I_farmaci_da_sottoporre_al_monitoraggio_intensivo-portlet" basedir="." default="deploy">
+	<import file="../build-common-portlet.xml" />
+</project>

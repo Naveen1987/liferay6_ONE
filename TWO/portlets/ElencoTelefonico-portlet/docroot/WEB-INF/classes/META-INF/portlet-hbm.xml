@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.liferay.sample.model.Telephonic" />
+	<class name="com.liferay.sample.model.impl.TelephonicImpl" table="telephonic">
+		<id name="telephonicId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="Tipo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="tipoSede" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="comuneSede" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="descrizioneSede" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="interno" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="piano" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="area" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="blocco" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="stanza" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="marca" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modello" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="inventarioSN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="unitaOperativa" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="descrizione" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="note" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="visibile" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

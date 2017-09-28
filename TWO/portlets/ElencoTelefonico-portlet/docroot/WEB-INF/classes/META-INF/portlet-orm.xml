@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.liferay.sample.model.impl.TelephonicModelImpl">
+		<attributes>
+			<id name="telephonicId" />
+			<basic name="Tipo" />
+			<basic name="tipoSede" />
+			<basic name="comuneSede" />
+			<basic name="descrizioneSede" />
+			<basic name="interno" />
+			<basic name="piano" />
+			<basic name="area" />
+			<basic name="blocco" />
+			<basic name="stanza" />
+			<basic name="marca" />
+			<basic name="modello" />
+			<basic name="inventarioSN" />
+			<basic name="unitaOperativa" />
+			<basic name="descrizione" />
+			<basic name="nome" />
+			<basic name="note" />
+			<basic name="visibile" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.liferay.sample.model.impl.TelephonicImpl" name="Telephonic">
+		<table name="telephonic" />
+		<attributes />
+	</entity>
+</entity-mappings>

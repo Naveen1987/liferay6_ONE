@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.liferay.sample.model.impl.BookedEquipmentModelImpl">
+		<attributes>
+			<id name="booked_equip_id" />
+			<basic name="equip_id" />
+			<basic name="course_id" />
+			<basic name="equip_quantity" />
+			<basic name="booked_equip_status" />
+			<basic name="booked_equip_date" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.EquipmentModelImpl">
+		<attributes>
+			<id name="equip_id" />
+			<basic name="equipment_name" />
+			<basic name="equip_quantity" />
+			<basic name="equip_description" />
+			<basic name="equip_status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.suiluppo_applicationModelImpl">
+		<attributes>
+			<id name="applicat_id" />
+			<basic name="applicat_name" />
+			<basic name="applicat_email" />
+			<basic name="applicat_phone" />
+			<basic name="course_id" />
+			<basic name="applicat_confirm" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.suiluppo_courseModelImpl">
+		<attributes>
+			<id name="course_id" />
+			<basic name="Docente" />
+			<basic name="Evento_Progetto" />
+			<basic name="Titolo" />
+			<basic name="Descrizione" />
+			<basic name="Figure_Professionali_Coinvolte" />
+			<basic name="Data_Inizio" />
+			<basic name="Data_Fine" />
+			<basic name="Tot_Ore" />
+			<basic name="Nr_Edizione" />
+			<basic name="Sede" />
+			<basic name="Abstract" />
+			<basic name="Dispensa_corso" />
+			<basic name="Ammessi_al_corso" />
+			<basic name="Scadenza_Iscrizioni" />
+			<basic name="Visibile" />
+			<basic name="Bloccato" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.suiluppo_roomModelImpl">
+		<attributes>
+			<id name="roomID" />
+			<basic name="room_name" />
+			<basic name="room_description" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.suiluppo_room_allocationModelImpl">
+		<attributes>
+			<id name="room_allocat_id" />
+			<basic name="roomID" />
+			<basic name="course_id" />
+			<basic name="room_allocat_date" />
+			<basic name="room_allocat_startTime" />
+			<basic name="room_allocat_start" />
+			<basic name="room_allocat_end" />
+			<basic name="room_allocat_status" />
+			<basic name="room_allocat_endTime" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.sample.model.impl.suiluppo_room_allocation_archiveModelImpl">
+		<attributes>
+			<id name="room_allocat_archive_id" />
+			<basic name="roomID" />
+			<basic name="course_id" />
+			<basic name="room_allocat_date" />
+			<basic name="room_allocat_startTime" />
+			<basic name="room_allocat_start" />
+			<basic name="room_allocat_end" />
+			<basic name="room_allocat_status" />
+			<basic name="room_allocat_endTime" />
+			<basic name="room_archive_date" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.liferay.sample.model.impl.BookedEquipmentImpl" name="BookedEquipment">
+		<table name="bookedequipment" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.EquipmentImpl" name="Equipment">
+		<table name="equipment" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.suiluppo_applicationImpl" name="suiluppo_application">
+		<table name="suiluppo_application" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.suiluppo_courseImpl" name="suiluppo_course">
+		<table name="suiluppo_course" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.suiluppo_roomImpl" name="suiluppo_room">
+		<table name="suiluppo_room" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.suiluppo_room_allocationImpl" name="suiluppo_room_allocation">
+		<table name="suiluppo_room_allocation" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.sample.model.impl.suiluppo_room_allocation_archiveImpl" name="suiluppo_room_allocation_archive">
+		<table name="suiluppo_room_allocation_archive" />
+		<attributes />
+	</entity>
+</entity-mappings>

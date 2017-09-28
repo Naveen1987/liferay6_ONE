@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.liferay.sample">
+	<author>Administrator</author>
+	<namespace>SAMPLE</namespace>
+	<entity name="Telephonic" local-service="true" remote-service="false" table="telephonic" cache-enabled="false">
+		<column name="telephonicId" type="long" primary="true"></column>
+		<column name="Tipo" type="String"></column>
+		<column name="tipoSede" type="String"></column>
+		<column name="comuneSede" type="String"></column>
+		<column name="descrizioneSede" type="String"></column>
+		<column name="interno" type="String"></column>
+		<column name="piano" type="String"></column>
+		<column name="area" type="String"></column>
+		<column name="blocco" type="String"></column>
+		<column name="stanza" type="String"></column>
+		<column name="marca" type="String"></column>
+		<column name="modello" type="String"></column>
+		<column name="inventarioSN" type="String"></column>
+		<column name="unitaOperativa" type="String"></column>
+		<column name="descrizione" type="String"></column>
+		<column name="nome" type="String"></column>
+		<column name="note" type="String"></column>
+		<column name="visibile" type="String"></column>
+	</entity>
+</service-builder>

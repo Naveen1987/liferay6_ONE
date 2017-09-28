@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.liferay.sample.service.BookedEquipmentLocalService" class="com.liferay.sample.service.impl.BookedEquipmentLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.BookedEquipmentPersistence" class="com.liferay.sample.service.persistence.BookedEquipmentPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.EquipmentLocalService" class="com.liferay.sample.service.impl.EquipmentLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.EquipmentPersistence" class="com.liferay.sample.service.persistence.EquipmentPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.suiluppo_applicationLocalService" class="com.liferay.sample.service.impl.suiluppo_applicationLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.suiluppo_applicationPersistence" class="com.liferay.sample.service.persistence.suiluppo_applicationPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.suiluppo_courseLocalService" class="com.liferay.sample.service.impl.suiluppo_courseLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.suiluppo_coursePersistence" class="com.liferay.sample.service.persistence.suiluppo_coursePersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.suiluppo_roomLocalService" class="com.liferay.sample.service.impl.suiluppo_roomLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.suiluppo_roomPersistence" class="com.liferay.sample.service.persistence.suiluppo_roomPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.suiluppo_room_allocationLocalService" class="com.liferay.sample.service.impl.suiluppo_room_allocationLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.suiluppo_room_allocationPersistence" class="com.liferay.sample.service.persistence.suiluppo_room_allocationPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.sample.service.suiluppo_room_allocation_archiveLocalService" class="com.liferay.sample.service.impl.suiluppo_room_allocation_archiveLocalServiceImpl" />
+	<bean id="com.liferay.sample.service.persistence.suiluppo_room_allocation_archivePersistence" class="com.liferay.sample.service.persistence.suiluppo_room_allocation_archivePersistenceImpl" parent="basePersistence" />
+</beans>

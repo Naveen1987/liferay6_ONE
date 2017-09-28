@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="Istruzioni_per_la_compilazione-portlet" basedir="." default="deploy">
+	<import file="../build-common-portlet.xml" />
+</project>

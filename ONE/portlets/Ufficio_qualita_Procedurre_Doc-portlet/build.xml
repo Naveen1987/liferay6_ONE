@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="Ufficio_qualita_Procedurre_Doc-portlet" basedir="." default="deploy">
+	<import file="../build-common-portlet.xml" />
+</project>

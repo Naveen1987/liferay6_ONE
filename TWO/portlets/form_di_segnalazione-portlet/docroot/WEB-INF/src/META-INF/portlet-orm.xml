@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.daffo.form_di_segnalazione.model.impl.form_di_segnalazioneModelImpl">
+		<attributes>
+			<id name="Form_di_segnalazione_id" />
+			<basic name="CODICE" />
+			<basic name="INIZIALI_1" />
+			<basic name="INIZIALI_1_a" />
+			<basic name="INIZIALI_1_b" />
+			<basic name="INIZIALI_1_c" />
+			<basic name="INIZIALI_1_d" />
+			<basic name="INIZIALI_1_e" />
+			<basic name="DATA_2" />
+			<basic name="SESSO_3" />
+			<basic name="DATA_4" />
+			<basic name="ORIGINE_5" />
+			<basic name="DESCRIZIONE_6" />
+			<basic name="INDICARE_7_1" />
+			<basic name="INDICARE_7_2" />
+			<basic name="INDICARE_7_3" />
+			<basic name="INDICARE_7_4" />
+			<basic name="INDICARE_7_5" />
+			<basic name="INDICARE_7_6" />
+			<basic name="INDICARE_7_7" />
+			<basic name="GRAVITA_8_1" />
+			<basic name="GRAVITA_8_2" />
+			<basic name="GRAVITA_8_3" />
+			<basic name="GRAVITA_8_4" />
+			<basic name="GRAVITA_8_5" />
+			<basic name="GRAVITA_8_6" />
+			<basic name="GRAVITA_8_7" />
+			<basic name="EVENTUALI_9" />
+			<basic name="ESITO_10" />
+			<basic name="ESITO_10_1" />
+			<basic name="ESITO_10_2" />
+			<basic name="ESITO_10_3" />
+			<basic name="ESITO_10_4" />
+			<basic name="ESITO_10_5" />
+			<basic name="ESITO_10_6" />
+			<basic name="ESITO_10_7" />
+			<basic name="ESITO_10_8" />
+			<basic name="ESITO_10_9" />
+			<basic name="ESITO_10_10" />
+			<basic name="AZIONI_11" />
+			<basic name="FARMACO_12_a" />
+			<basic name="FARMACO_12_a_13" />
+			<basic name="FARMACO_12_a_14" />
+			<basic name="FARMACO_12_a_15" />
+			<basic name="FARMACO_12_a_16_1" />
+			<basic name="FARMACO_12_a_16_2" />
+			<basic name="FARMACO_12_a_17" />
+			<basic name="FARMACO_12_a_18" />
+			<basic name="FARMACO_12_a_19" />
+			<basic name="FARMACO_12_a_20" />
+			<basic name="FARMACO_12_b" />
+			<basic name="FARMACO_12_b_13" />
+			<basic name="FARMACO_12_b_14" />
+			<basic name="FARMACO_12_b_15" />
+			<basic name="FARMACO_12_b_16_1" />
+			<basic name="FARMACO_12_b_16_2" />
+			<basic name="FARMACO_12_b_17" />
+			<basic name="FARMACO_12_b_18" />
+			<basic name="FARMACO_12_b_19" />
+			<basic name="FARMACO_12_b_20" />
+			<basic name="FARMACO_12_c" />
+			<basic name="FARMACO_12_c_13" />
+			<basic name="FARMACO_12_c_14" />
+			<basic name="FARMACO_12_c_15" />
+			<basic name="FARMACO_12_c_16_1" />
+			<basic name="FARMACO_12_c_16_2" />
+			<basic name="FARMACO_12_c_17" />
+			<basic name="FARMACO_12_c_18" />
+			<basic name="FARMACO_12_c_19" />
+			<basic name="FARMACO_12_c_20" />
+			<basic name="INDICAZIONI_21_a" />
+			<basic name="INDICAZIONI_21_b" />
+			<basic name="INDICAZIONI_21_c" />
+			<basic name="FARMACO_22_a" />
+			<basic name="FARMACO_22_a_23" />
+			<basic name="FARMACO_22_a_24" />
+			<basic name="FARMACO_22_a_25" />
+			<basic name="FARMACO_22_a_26_1" />
+			<basic name="FARMACO_22_a_26_2" />
+			<basic name="FARMACO_22_a_27" />
+			<basic name="FARMACO_22_a_28" />
+			<basic name="FARMACO_22_a_29" />
+			<basic name="FARMACO_22_a_30" />
+			<basic name="FARMACO_22_b" />
+			<basic name="FARMACO_22_b_23" />
+			<basic name="FARMACO_22_b_24" />
+			<basic name="FARMACO_22_b_25" />
+			<basic name="FARMACO_22_b_26_1" />
+			<basic name="FARMACO_22_b_26_2" />
+			<basic name="FARMACO_22_b_27" />
+			<basic name="FARMACO_22_b_28" />
+			<basic name="FARMACO_22_b_29" />
+			<basic name="FARMACO_22_b_30" />
+			<basic name="INDICAZIONI_31_a" />
+			<basic name="INDICAZIONI_31_b" />
+			<basic name="USO_32" />
+			<basic name="CONDIZIONI_33" />
+			<basic name="ALTRE_34" />
+			<basic name="INDICARE_35_1" />
+			<basic name="INDICARE_35_2" />
+			<basic name="INDICARE_35_3" />
+			<basic name="INDICARE_35_4" />
+			<basic name="INDICARE_35_5" />
+			<basic name="INDICARE_35_6" />
+			<basic name="QUALIFICA_36_1" />
+			<basic name="QUALIFICA_36_2" />
+			<basic name="QUALIFICA_36_3" />
+			<basic name="QUALIFICA_36_4" />
+			<basic name="QUALIFICA_36_5" />
+			<basic name="QUALIFICA_36_6" />
+			<basic name="QUALIFICA_36_7" />
+			<basic name="QUALIFICA_36_8" />
+			<basic name="QUALIFICA_36_9" />
+			<basic name="QUALIFICA_36_10" />
+			<basic name="DATI_37_1" />
+			<basic name="DATI_37_2" />
+			<basic name="DATI_37_3" />
+			<basic name="DATI_37_4" />
+			<basic name="ASL_38" />
+			<basic name="REGIONE_39" />
+			<basic name="DATA_40" />
+			<basic name="FIRMA_41" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.daffo.form_di_segnalazione.model.impl.form_di_segnalazioneImpl" name="form_di_segnalazione">
+		<table name="form_di_segnalazione" />
+		<attributes />
+	</entity>
+</entity-mappings>

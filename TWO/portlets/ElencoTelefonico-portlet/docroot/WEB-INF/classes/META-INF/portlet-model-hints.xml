@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.sample.model.Telephonic">
+		<field name="telephonicId" type="long" />
+		<field name="Tipo" type="String" />
+		<field name="tipoSede" type="String" />
+		<field name="comuneSede" type="String" />
+		<field name="descrizioneSede" type="String" />
+		<field name="interno" type="String" />
+		<field name="piano" type="String" />
+		<field name="area" type="String" />
+		<field name="blocco" type="String" />
+		<field name="stanza" type="String" />
+		<field name="marca" type="String" />
+		<field name="modello" type="String" />
+		<field name="inventarioSN" type="String" />
+		<field name="unitaOperativa" type="String" />
+		<field name="descrizione" type="String" />
+		<field name="nome" type="String" />
+		<field name="note" type="String" />
+		<field name="visibile" type="String" />
+	</model>
+</model-hints>

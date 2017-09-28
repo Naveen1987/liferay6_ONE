@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.liferay.daffo">
+	<author>Naveen</author>
+	<namespace>prontuario_drug</namespace>
+    <entity name="prontuario_drug" table="prontuario_drug" local-service="true" remote-service="false" cache-enabled="false">
+        <column type="long" name="drug_id" primary="true"></column>
+        <column name="Gruppo" type="String"></column>
+        <column name="SottoGruppo" type="String"></column>
+        <column name="Codice" type="String"></column>
+        <column name="Principio_Attivo" type="String"></column>
+        <column name="Nome_Commerciale" type="String"></column>
+    </entity>
+</service-builder>

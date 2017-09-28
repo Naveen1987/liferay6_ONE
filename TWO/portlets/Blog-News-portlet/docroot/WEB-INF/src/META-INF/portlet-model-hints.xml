@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.daffo.model.News_Blogs">
+		<field name="News_Blogs_Id" type="long" />
+		<field name="title" type="String" />
+		<field name="body" type="String" />
+		<field name="Publish_Date" type="Date" />
+		<field name="Expiration_Date" type="Date" />
+		<field name="author" type="String" />
+		<field name="visible" type="String" />
+	</model>
+</model-hints>

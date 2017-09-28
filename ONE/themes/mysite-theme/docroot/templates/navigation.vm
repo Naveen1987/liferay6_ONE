@@ -1,0 +1,97 @@
+<nav class="$nav_css_class navbar site-navigation" id="navigation" role="navigation">
+	<div class="navbar-inner">
+		<div class="collapse nav-collapse">
+			<ul aria-label="#language ("site-pages")" class="nav nav-collapse" role="menubar">
+			
+			<!--start My Code Is Here-->
+					
+<li class="$nav_item_css_class"><a class="$nav_item_link_css_class" href="/group/internal-intranet/welcome"> Welcome </a></li>
+<li class="$nav_item_css_class"><a class="$nav_item_link_css_class" href="#">Unità Operative &#9662;</a>
+<ul class="dropdown-menu child-menu">	
+<li class="$nav_child_css_class"><a  href="/group/farmacia_ospedaliera/welcome">Farmacia Ospedaliera</a></li>
+<li class="$nav_child_css_class"><a  href="/group/staff_sistemi_snformativi/welcome" >Staff Sistemi Informativi</a></li>
+<li class="$nav_child_css_class"><a  href="/group/sviluppo_e_formazione/welcome" >Sviluppo e Formazione</a></li>
+<li class="$nav_child_css_class"><a  href="/group/controllo_di_gestione/welcome" >Controllo di Gestione</a></li>
+<li class="$nav_child_css_class"><a  href="/group/ufficio_relazioni_con_il_pubblico/welcome" >Ufficio Relazioni con il pubblico</a></li>
+<li class="$nav_child_css_class"><a  href="/group/servizio_risorse_umane/welcome" >Servizio Risorse Umane</a></li>
+<li class="$nav_child_css_class"><a  href="/group/ufficio_valutazione/welcome" >Ufficio Valutazione</a></li>
+<li class="$nav_child_css_class"><a  href="/group/flussi_informativi_sanitari/welcome" >Flussi Informativi Sanitari</a></li>
+<li class="$nav_child_css_class"><a  href="/group/laboratorio_analisi_magenta/welcome" >Laboratorio Analisi Magenta</a></li>
+<li class="$nav_child_css_class"><a  href="/group/accoglienza_e_ospitalita/welcome" >Accoglienza e Ospitalità</a></li>
+<li class="$nav_child_css_class"><a  href="/group/servizio_acquisti_e_appalti/welcome" >Servizio Acquisti e Appalti</a></li>
+<li class="$nav_child_css_class"><a  href="/group/servizio_dietietico/welcome" >Servizio Dietietico</a></li>
+<li class="$nav_child_css_class"><a  href="/group/affari_generali_e_legali/welcome" >Affari Generali e Legali</a></li>
+<li class="$nav_child_css_class"><a  href="/group/comitato_scientifico/welcome" >Comitato Scientifico</a></li>		
+</ul>
+</li>
+<li class="$nav_item_css_class"><a class="$nav_item_link_css_class" href="#">Procedure AO &#9662;</a>
+<ul class="dropdown-menu child-menu">
+<li class="$nav_child_css_class"><a  href="/group/ufficio_qualita_e_accreditamento/welcome" >Ufficio Qualità e Accreditamento</a></li>
+<li class="$nav_child_css_class"><a  href="/group/farmacia/welcome"  >Farmacia</a></li>
+<li class="$nav_child_css_class"><a  href="/group/siecio_cio/welcome" >SIECIO/CIO</a></li>
+<li class="$nav_child_css_class"><a  href="/group/spp_mc/welcome" >SPP/MC</a></li>
+<li class="$nav_child_css_class"><a  href="/group/direzioni_mediche/welcome" >Direzioni Mediche</a></li>
+<li class="$nav_child_css_class"><a  href="/group/sitra/welcome" >SITRA</a></li>
+<li class="$nav_child_css_class"><a  href="/group/hrm/welcome" >HRM</a></li>
+<li class="$nav_child_css_class"><a  href="/group/comitati_gruppi_di_miglioramento/welcome" >Comitati/Gruppi di Miglioramento</a></li>
+<li class="$nav_child_css_class"><a  href="/group/rapporti_e_dati/welcome" >Rapporti e Dati</a></li>
+<li class="$nav_child_css_class"><a  href="/group/accrediatmento_e_controlli/welcome" >Accrediatmento e Controlli</a></li>
+<li class="$nav_child_css_class"><a  href="/group/cartella_clinica/welcome" >Cartella Clinica</a></li>
+</ul>
+</li>	
+
+<!--End My Code Close Here-->
+				#foreach ($nav_item in $nav_items)
+				#if($nav_item.getName()==$site_name)
+				#else
+				<!--This my Code-->
+				#set ($nav_item_attr_selected="")
+						#set ($nav_item_attr_has_popup="")
+						#set ($nav_item_caret="")
+						#set ($nav_item_css_class="lfr-nav-item")
+						#set ($nav_item_link_css_class="")
+
+					#if ($nav_item.isSelected())
+						#set ($nav_item_attr_selected="aria-selected='true'")
+						#set ($nav_item_css_class="$nav_item_css_class selected active")
+					#end
+
+					#if ($nav_item.hasChildren())
+						#set ($nav_item_attr_has_popup="aria-haspopup='true'")
+						#set ($nav_item_caret='<span class="lfr-nav-child-toggle"><i class="icon-caret-down"></i></span>')
+						#set ($nav_item_css_class="$nav_item_css_class dropdown")
+						#set ($nav_item_link_css_class="dropdown-toggle")
+					#end
+					<li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
+						<a aria-labelledby="layout_$nav_item.getLayoutId()" $nav_item_attr_has_popup class="$nav_item_link_css_class" href="$nav_item.getURL()" $nav_item.getTarget() role="menuitem">
+							<span>$nav_item.icon() $nav_item.getName() $nav_item_caret</span>
+						</a>
+						#if ($nav_item.hasChildren())
+							<ul class="dropdown-menu child-menu" role="menu">
+								#foreach ($nav_child in $nav_item.getChildren())
+									#set ($nav_child_attr_selected="")
+									#set ($nav_child_css_class="lfr-nav-item")
+
+									#if ($nav_child.isSelected())
+										#set ($nav_child_attr_selected="aria-selected='true'")
+										#set ($nav_child_css_class="selected")
+									#end
+
+									<li class="$nav_child_css_class" id="layout_$nav_child.getLayoutId()" $nav_child_attr_selected role="presentation">
+										<a aria-labelledby="layout_$nav_child.getLayoutId()" href="$nav_child.getURL()" $nav_child.getTarget() role="menuitem">$nav_child.getName()</a>
+									</li>
+								#end
+							</ul>
+						#end
+					</li>
+				<!--This end of Code-->
+				#end	
+				#end
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<script>
+	Liferay.Data.NAV_LIST_SELECTOR = '.navbar-inner .nav-collapse > ul';
+</script>
